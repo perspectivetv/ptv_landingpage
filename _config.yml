@@ -1,0 +1,33 @@
+# Site settings
+name: Perspective TV
+description: "Grupo de streamers que aman jugar videojuegos y construir comunidad a través de ellos. Realizamos transmisiones en directo en nuestro canal de Twitch."
+baseurl: ''
+github: [metadata]
+
+# Delete the lines you don't need
+# about 5 elements are recomended
+twitch_username: perspectivetv
+facebook_username: perspectivetvcl
+twitter_username: perspectivetvcl
+instagram_username: perspectivetvcl
+# blog_url: "/blog"
+email: felipe.larenas.m@gmail.com
+# public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
+
+avatar: yes
+#avatar_img_path: "imgs/avatar.jpg""
+# You can link to your GitHub image. That way it will get updated
+# automatically whenever you change your GitHub profile picture
+avatar_img_path: "https://pbs.twimg.com/profile_images/913455762378289158/Jc4XBOyL_400x400.jpg"
+
+front_img: yes
+#front_img_path: "imgs/background.jpg"
+front_img_path: "https://external.url/image.jpg"
+
+favicon_img: no
+#favicon_img_path: "imgs/favicon.ico"
+#favicon_img_path: "https://external.url/favicon.ico"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
