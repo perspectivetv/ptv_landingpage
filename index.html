@@ -6,7 +6,7 @@ permalink: /
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <title>{{site.name}}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ site.description }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -15,7 +15,7 @@ permalink: /
         {% endif %}
         <link rel="stylesheet" href="{{ "css/front.css" }}">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="content">
@@ -35,8 +35,16 @@ permalink: /
                     <li><a class="fa fa-2x fa-twitch" href="https://www.twitch.tv/{{ site.twitch_username}}" target="_blank"><span class="description">Twitch</span></a></li>
                     {% endif %}
 
+                    {% if site.youtube_username%}
+                    <li><a class="fa fa-2x fa-youtube" href="https://youtube.com/{{ site.youtube_username}}" target="_blank"><span class="description">Twitch</span></a></li>
+                    {% endif %}
+
+                    {% if site.discord_username%}
+                    <li><a class="fa fa-2x fa-group" href="https://discord.me/{{ site.discord_username}}" target="_blank"><span class="description">Twitch</span></a></li>
+                    {% endif %}
+
                     {% if site.facebook_username %}
-                    <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><span class="description">Facebook</span></a></li>
+                    <li><a class="fa fa-2x fa-facebook-official" href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><span class="description">Facebook</span></a></li>
                     {% endif %}
 
                     {% if site.twitter_username %}
@@ -45,10 +53,6 @@ permalink: /
 
                     {% if site.instagram_username %}
                     <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><span class="description">Instagram</span></a></li>
-                    {% endif %}
-
-                    {% if site.blog_url %}
-                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></a></li>
                     {% endif %}
 
                     {% if site.email %}
